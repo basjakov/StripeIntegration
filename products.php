@@ -1,9 +1,9 @@
 <?php
     $products = array(
             "Product1"=>array(
-                "Title"=>"My Amazing Product",
-                "price"=>6700,
-                "features"=>array("features 1","features 2","features 3")
+                "Title"=>"Roshen",
+                "price"=>200,
+                "features"=>array("Best chocolate 100% natural","Made in ukraine","calory:100")
             ),
             "Product2"=>array(
                 "Title"=>"My Amazing Product 2",
