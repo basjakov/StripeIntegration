@@ -1,5 +1,5 @@
 <?php
-        require_once "products.php";
+        require_once "config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,10 +59,10 @@
                             echo '
                                 </ul>
                                 <br><br>
-                                <form action="" method="POST">
+                                <form action="stripeIPN.php?id='.$productID.'" method="POST">
                                     <script 
                                         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                        data-key="pk_test_qpdXjjgLKiLjNJTRPI8QtYWw00SisBwXl2"
+                                        data-key="'.$stripeDetails['publishableKey'].'"
                                         data-amount="'.$attributes["price"].'"
                                         data-name="'.$attributes["Title"].'"
                                         data-description="Widget"
